@@ -2,7 +2,7 @@ import { __prod__ } from "./constants";
 import { Post } from "./entities/Post";
 import { MikroORM } from "@mikro-orm/core";
 import path from 'path';
-require('dotenv').config()
+
 
 
 export default {
@@ -14,6 +14,6 @@ export default {
   dbName: 'Readit', 
   type: 'postgresql',
   user: 'postgres',
-  password: '',
+  password: process.env.DB_PASS,
   debug: !__prod__,
 } as Parameters<typeof MikroORM.init>[0];

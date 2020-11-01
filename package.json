@@ -23,6 +23,7 @@
     "@mikro-orm/migrations": "^4.2.3",
     "@mikro-orm/postgresql": "^4.2.3",
     "dotenv": "^8.2.0",
+    "dotenv-safe": "^8.2.0",
     "pg": "^8.4.2"
   },
   "mikro-orm": {
